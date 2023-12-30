@@ -1,0 +1,333 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
+
+:root {
+  --heading-color: rgb(76, 11, 76);
+  --sec-text-clr: rgb(164, 29, 29);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  background-color: rgb(251, 247, 247);
+}
+body .announcement {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  height: 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+header {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  z-index: 11111;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  grid-template-columns: auto auto auto;
+}
+header .hamburger {
+  display: none;
+  font-size: 18px;
+}
+header .nav {
+  /* width: 40%; */
+  color: black;
+}
+header .nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 450;
+}
+header .logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: rgb(76, 3, 79);
+}
+header .nav ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  color: black;
+  gap: 40px;
+  height: 100%;
+}
+header .icons {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+}
+/* side panel */
+#sidePanel {
+  margin-top: 3px;
+  width: 20%;
+
+  display: none;
+  flex-direction: column;
+  z-index: 555;
+  background-color: white;
+}
+
+/* side panel ends here */
+body .banner {
+  position: relative;
+  width: 100%;
+  height: 640px;
+}
+body .banner img {
+  height: 100%;
+  width: 100%;
+}
+.banner a button {
+  position: absolute;
+  z-index: 22222;
+  left: 43%;
+  /* border: none; */
+  background-color: rgb(39, 85, 72);
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s ease;
+  padding: 10px 8px;
+  top: 85%;
+}
+body .banner a button:hover {
+  background-color: rgb(26, 118, 92);
+  cursor: pointer;
+}
+.main {
+  margin-top: 35px;
+}
+.main .heading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-size: 28px;
+  color: var(--heading-color);
+}
+.main a {
+  text-decoration: none;
+  color: black;
+}
+.main .discover {
+  margin-top: 20px;
+  margin: auto;
+  width: 80%;
+  gap: 40px;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-left: 50px; */
+  grid-template-columns: auto auto auto;
+}
+.main .discover a {
+  text-decoration: none;
+  /* color: black; */
+  text-align: center;
+  text-transform: capitalize;
+}
+.main .discover a .card {
+  width: 420px;
+  /* border: 2px solid; */
+  height: 300px;
+}
+.main .discover a .card:hover {
+  text-decoration: underline;
+  color: var(--heading-color);
+}
+.main .discover a .card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
+}
+.main .discover a .card .info {
+  height: 30%;
+  line-height: 1.8;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--sec-text-clr);
+  font-weight: 500;
+}
+.main .discover a .card .info h2 {
+  font-size: 22px;
+  color: black;
+  /* letter-spacing:; */
+}
+
+/* arrivals */
+
+.arrivals {
+  width: 100%;
+}
+.arrivals .cards {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 20px auto;
+}
+.arrivals .cards .card {
+  width: 290px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.arrivals .cards .card .image {
+  width: 100%;
+  position: relative;
+  height: 270px;
+  border-radius: 10px;
+}
+.overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11111;
+
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(129, 111, 111, 0.3);
+}
+.arrivals .cards .card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.arrivals a {
+  text-decoration: none;
+}
+
+.arrivals .text-left {
+  color: var(--heading-color);
+  text-align: left;
+  margin: 50px 0;
+  width: 200px;
+  /* border :1px solid; */
+  font-size: 28px;
+  margin-left: 100px;
+  text-transform: capitalize;
+}
+.arrivals .cards .card .details {
+  margin: 20px 10px;
+  text-transform: capitalize;
+  color: black;
+}
+.arrivals .cards .card {
+  transition: 0.2s ease;
+}
+.arrivals .cards .card:hover {
+  transform: scale(1.02);
+}
+.arrivals .cards .card .details .other-colors {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+}
+.arrivals .cards .card .details .other-colors p {
+  padding: 5px;
+  background-color: rgba(227, 226, 226, 0.3);
+  border-radius: 10px;
+  font-size: 11px;
+  margin-bottom: 5px;
+  border: 1px solid rgba(227, 226, 226, 0.3);
+}
+.arrivals .details h3 {
+  font-weight: 800;
+  font-size: 19px;
+}
+.arrivals .cards .card .details .brand {
+  margin-top: 5px;
+  color: var(--sec-text-clr);
+  font-size: 12px;
+  font-weight: 450;
+}
+.arrivals .price {
+  display: flex;
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+.arrivals .price span {
+  font-size: 11px;
+}
+/* arrivals ends here */
+
+@media only screen and (max-width:320px){
+  body{
+      max-width: 200%;
+      display: block;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+  }
+  body .announcement{
+    font-size: 8px;
+    width: 100%;
+  }
+  header{
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      z-index: 5555;
+      display: flex;
+      gap: 30px;
+      background-color: white;
+      font-size: 13px;
+      padding-right: 10px;
+      
+  }
+  header .nav{
+      display: none;
+  }
+  header .hamburger{
+      display: block;
+      font-size: 23px;
+      color: rgb(87, 85, 82);
+  }
+  header .hamburger:hover{
+    color: black;
+  }
+
+  header .icons {
+    gap: 23px;
+    font-size: 16px;
+  }
+  #sidePanel{
+    width: 50%;
+    z-index: 4444;
+    margin-top:-0.5px ;
+    position: absolute;
+    left: 0;
+    border-radius: 0px 0px 10px 10px;
+    height: 500px;
+  }
+  }
+  
