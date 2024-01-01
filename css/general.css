@@ -21,7 +21,7 @@ body .announcement {
   width: 100%;
   display: flex;
   font-size: 14px;
-  height: 25px;
+  height: 30px;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -30,7 +30,7 @@ body .announcement {
 }
 header {
   width: 100%;
-  height: 45px;
+  height: 50px;
   display: grid;
   z-index: 11111;
   justify-content: space-around;
@@ -58,7 +58,7 @@ header .logo {
   height: 100%;
   align-items: center;
   justify-content: center;
-  color: rgb(76, 3, 79);
+  color: black;
 }
 header .nav ul {
   list-style: none;
@@ -278,56 +278,303 @@ body .banner a button:hover {
   font-size: 11px;
 }
 /* arrivals ends here */
-
-@media only screen and (max-width:320px){
-  body{
-      max-width: 200%;
-      display: block;
-      box-sizing: border-box;
-      justify-content: center;
-      align-items: center;
+  /* shop by category */
+  .sbc{
+    height: 600px;
+    margin: 50px auto;
+    width: 90%;
+    border-radius: 20px;
   }
-  body .announcement{
+  .sbc img{
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  /* shop by category ends here */
+     .sbc2{
+      width: 100%;
+     }
+     .sbc2 a{
+      text-decoration: none;
+      text-transform: capitalize; 
+      color: black;  
+      }
+      .sbc2 a h2{
+        margin: 20px ;
+        margin-left: 70px ;
+        margin-bottom: 30px;
+        font-size: 27px;
+        color: var(--heading-color);
+      }
+     .sbc2 .cards{
+      display: grid;
+      justify-content: center;
+      gap: 30px;
+      grid-template-columns: auto auto auto auto auto;
+     }
+     .sbc2 .cards .card {
+      width: 230px;
+      text-transform: capitalize;
+      background-color: white;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      box-shadow: 1px 1px 2px 5px rgba(227, 226, 226, 0.3);
+     }
+     .sbc2 .cards .card:hover{
+      transform: scale(1.02);
+     }
+     .sbc2 .cards .card h3{
+       margin-top: -20px;
+       font-size: 18px;
+     }
+     .sbc2 .cards .card p{
+       width: 80px;
+       font-size: 16px;
+       align-items: center;
+       font-weight: 400;
+       border-radius: 10px;
+       justify-content: center;
+       margin:  auto;
+       display: flex;
+       margin-top: 10px;
+       padding: 4px 6px;
+       margin-bottom: 5px;
+       background-color: black;
+       color: white;
+     }
+     .sbc2 .cards .card img{
+      width: 100%;
+      height: 210px;
+      padding: 20px 30px;
+     }
+  
+  
+  /* shop by category ends here */
+
+  /* shop by department */
+
+  .sbd{
+    
+  }
+  /* shop by department ends here */
+
+@media only screen and (max-width: 320px) {
+  body {
+    max-width: 200%;
+    display: block;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  body .announcement {
     font-size: 8px;
     width: 100%;
   }
-  header{
-      width: 100%;
-      height: 40px;
-      align-items: center;
-      justify-content: center;
-      z-index: 5555;
-      display: flex;
-      gap: 30px;
-      background-color: white;
-      font-size: 13px;
-      padding-right: 10px;
-      
+  header {
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    z-index: 5555;
+    display: flex;
+    gap: 35px;
+    background-color: white;
+    font-size: 12px;
+    padding-right: 10px;
   }
-  header .nav{
-      display: none;
+  header .nav {
+    display: none;
   }
-  header .hamburger{
-      display: block;
-      font-size: 23px;
-      color: rgb(87, 85, 82);
+  header .hamburger {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 85, 82);
+    border: 2px solid;
+    width: 35px;
+    border-radius: 2px;
+    height: 30px;
   }
-  header .hamburger:hover{
+  header .hamburger:hover {
     color: black;
   }
 
   header .icons {
     gap: 23px;
-    font-size: 16px;
+    font-size: 15px;
   }
-  #sidePanel{
+  #sidePanel {
     width: 50%;
     z-index: 4444;
-    margin-top:-0.5px ;
+    margin-top: -0.5px;
+    padding: 15px 11px;
     position: absolute;
     left: 0;
-    border-radius: 0px 0px 10px 10px;
+    opacity: 2222;
+    border-radius: 0px 3px 10px 10px;
     height: 500px;
   }
+  #sidePanel ul {
+    list-style-type: none;
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
   }
-  
+  #sidePanel ul li {
+    text-transform: capitalize;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+  }
+  #sidePanel ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .home-btn {
+    color: white;
+    background-color: rgb(245, 244, 243);
+  }
+  /* banner section */
+  body .banner {
+    position: relative;
+    width: 100%;
+    height: 280px;
+  }
+  body .banner img {
+    height: 100%;
+    width: 100%;
+  }
+  .banner a button {
+    position: absolute;
+    top: 90%;
+    z-index: 1;
+    display: flex;
+    font-weight: 450;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    left: 85px;
+  }
+  /* banner section end here */
+
+  /* main section */
+  .main {
+    width: 100%;
+  }
+  .main .heading {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--heading-color);
+  }
+  .main .discover {
+    width: 100%;
+    /* border: 2px solid; */
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    flex-direction: column;
+  }
+  .main .discover a .card {
+    width: 260px;
+    /* border: 1px solid black; */
+    height: 200px;
+    padding-top: 10px;
+  }
+  .main .discover a .card img {
+    width: 100%;
+    height: 140px;
+  }
+  .main .discover a .card .info {
+    margin-top: -5px;
+    font-size: 9px;
+    line-height: 1.4;
+  }
+  .main .discover a .card .info h2 {
+    font-size: 16px;
+   
+    
+  }
+  /* main section ends here */
+
+  /* arrival starts here */
+  .arrivals {
+    width: 100%;
+margin-top: -30px;
+background-color: black;
+  }
+  .arrivals .text-left{
+    font-size: 20px;
+    padding-top: 15px;
+    margin-bottom: -8px;
+    color: white;
+  }
+  .arrivals .cards{
+    display: grid;
+    width: 100%;
+   grid-template-columns: auto auto;
+   padding: 5px;
+    gap: 10px;
+  }
+  .arrivals .cards a .card{
+    width: 150px;
+    padding: 5px ;
+    margin-bottom: 10px;
+    
+  }
+  .arrivals .cards .card .image {
+    height: 125px;
+  }
+  .arrivals .cards .card .image img{
+   height: 100%;
+  }
+  .arrivals .cards .card .details{
+    width: 100%;
+    margin-left: -0.08px;
+  }
+  .arrivals .cards .card .details .other-colors{
+   
+    display: flex;
+  }
+  .arrivals .cards .card .details .other-colors p{
+    display: flex;
+    height: 25px;
+    font-size: 8px;
+    align-items: center;
+    font-weight: 500;
+    justify-content: center;
+    width: 40px;
+  }
+  .arrivals .cards .card .details h3{
+    font-size: 11px;
+  }
+  .arrivals .cards .card .details .brand{
+    font-size: 8px;
+  }
+  .arrivals .cards .card .price{
+   display: flex;
+   margin-top: -15px;
+   margin-left: -9px;
+   width: 100%;
+   flex-direction: column;
+   font-size: 11px;
+  }
+  .arrivals .cards .card .price .amount{
+    font-size: 15px;
+  }
+  /* arrival ends here */
+ 
+}
