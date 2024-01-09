@@ -15,7 +15,7 @@
 
 body {
   width: 100vw;
-  background-color: rgb(251, 247, 247);
+  background-color: rgb(237, 234, 234);
 }
 body .announcement {
   width: 100%;
@@ -220,12 +220,24 @@ body .banner a button:hover {
 .arrivals a {
   text-decoration: none;
 }
+.arrivals a h2 {
+  color: var(--heading-color);
+  text-align: left;
+
+  margin: 50px 0;
+  width: 400px;
+  /* border :1px solid; */
+  font-size: 28px;
+  margin-left: 100px;
+  text-transform: capitalize;
+}
 
 .arrivals .text-left {
   color: var(--heading-color);
   text-align: left;
+
   margin: 50px 0;
-  width: 200px;
+  width: 400px;
   /* border :1px solid; */
   font-size: 28px;
   margin-left: 100px;
@@ -278,88 +290,203 @@ body .banner a button:hover {
   font-size: 11px;
 }
 /* arrivals ends here */
-  /* shop by category */
-  .sbc{
-    height: 600px;
-    margin: 50px auto;
-    width: 90%;
-    border-radius: 20px;
-  }
-  .sbc img{
-    height: 100%;
-    border-radius: 20px;
-    width: 100%;
-  }
-  
-  /* shop by category ends here */
-     .sbc2{
-      width: 100%;
-     }
-     .sbc2 a{
-      text-decoration: none;
-      text-transform: capitalize; 
-      color: black;  
-      }
-      .sbc2 a h2{
-        margin: 20px ;
-        margin-left: 70px ;
-        margin-bottom: 30px;
-        font-size: 27px;
-        color: var(--heading-color);
-      }
-     .sbc2 .cards{
-      display: grid;
-      justify-content: center;
-      gap: 30px;
-      grid-template-columns: auto auto auto auto auto;
-     }
-     .sbc2 .cards .card {
-      width: 230px;
-      text-transform: capitalize;
-      background-color: white;
-      text-align: center;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      box-shadow: 1px 1px 2px 5px rgba(227, 226, 226, 0.3);
-     }
-     .sbc2 .cards .card:hover{
-      transform: scale(1.02);
-     }
-     .sbc2 .cards .card h3{
-       margin-top: -20px;
-       font-size: 18px;
-     }
-     .sbc2 .cards .card p{
-       width: 80px;
-       font-size: 16px;
-       align-items: center;
-       font-weight: 400;
-       border-radius: 10px;
-       justify-content: center;
-       margin:  auto;
-       display: flex;
-       margin-top: 10px;
-       padding: 4px 6px;
-       margin-bottom: 5px;
-       background-color: black;
-       color: white;
-     }
-     .sbc2 .cards .card img{
-      width: 100%;
-      height: 210px;
-      padding: 20px 30px;
-     }
-  
-  
-  /* shop by category ends here */
+/* shop by category */
+.sbc {
+  height: 600px;
+  margin: 50px auto;
+  width: 90%;
+  border-radius: 20px;
+}
+.sbc img {
+  height: 100%;
+  border-radius: 20px;
+  width: 100%;
+}
 
-  /* shop by department */
+/* shop by category ends here */
+.sbc2 {
+  width: 100%;
+  margin: 50px 0;
+}
+.sbc2 a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+.sbc2 a h2 {
+  margin: 20px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  font-size: 27px;
+  color: var(--heading-color);
+}
+.sbc2 .cards {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: auto auto auto auto auto;
+}
+.sbc2 .cards .card {
+  width: 230px;
+  text-transform: capitalize;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  box-shadow: 1px 1px 2px 5px rgba(227, 226, 226, 0.3);
+}
+.sbc2 .cards .card:hover {
+  transform: scale(1.02);
+}
+.sbc2 .cards .card h3 {
+  margin-top: -20px;
+  font-size: 18px;
+}
+.sbc2 .cards .card p {
+  width: 80px;
+  font-size: 16px;
+  align-items: center;
+  font-weight: 400;
+  border-radius: 10px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  margin-top: 10px;
+  padding: 4px 6px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
+}
+.sbc2 .cards .card img {
+  width: 100%;
+  height: 210px;
+  padding: 20px 30px;
+}
 
-  .sbd{
-    
-  }
-  /* shop by department ends here */
+/* shop by category ends here */
+
+/* shop by department */
+
+.sbd {
+  width: 100%;
+}
+.sbd a {
+  text-decoration: none;
+}
+.sbd a h2 {
+  margin-bottom: 30px;
+  margin-left: 100px;
+  font-size: 27px;
+  text-transform: capitalize;
+}
+.sbd h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: black;
+  text-transform: capitalize;
+}
+.sbd .color {
+  color: rgb(116, 115, 115);
+  text-transform: capitalize;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.sbd .cards {
+  display: grid;
+  gap: 30px;
+  padding: 20px 0;
+  background-color: aliceblue;
+  margin-bottom: 30px;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+}
+.sbd .cards .card {
+  width: 290px;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  /* padding: 10px; */
+}
+.sbd .cards .card img {
+  width: 100%;
+  height: 340px;
+  border-radius: 5px 5px 0px 0px;
+}
+/* shop by department ends here */
+
+/* chosen by experts */
+.experts {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.experts a {
+  text-decoration: none;
+}
+.experts h2 {
+  font-size: 28px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.experts .cards {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  grid-template-columns: auto auto auto;
+}
+.experts .cards .card {
+  width: 360px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 7px 10px;
+}
+.experts .cards .card .main-img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+.experts .cards .card .main-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.experts .cards .card .sub-img {
+  width: 100%;
+  display: grid;
+  margin-top: 10px;
+  justify-content: space-between;
+ 
+  grid-template-columns: auto auto auto;
+}
+.experts .cards .card .sub-img img {
+  height: 100px;
+  border-radius: 5px;
+  width: 105px;
+}
+.experts .cards .card h3 {
+  color: black;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.experts .cards .card .price {
+  color: black;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.experts .cards .card .price .amount {
+  font-weight: 500;
+}
+.experts .cards .card .price p span {
+  font-size: 23px;
+}
+/* chosen by experts ends here */
 
 @media only screen and (max-width: 320px) {
   body {
@@ -390,14 +517,14 @@ body .banner a button:hover {
   }
   header .hamburger {
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
     align-items: center;
     justify-content: center;
     color: rgb(87, 85, 82);
     border: 2px solid;
-    width: 35px;
-    border-radius: 2px;
-    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    height: 27px;
   }
   header .hamburger:hover {
     color: black;
@@ -505,51 +632,53 @@ body .banner a button:hover {
   }
   .main .discover a .card .info h2 {
     font-size: 16px;
-   
-    
   }
   /* main section ends here */
 
   /* arrival starts here */
   .arrivals {
     width: 100%;
-margin-top: -30px;
-background-color: black;
+
+    background-color: rgb(194, 193, 172);
   }
-  .arrivals .text-left{
+  .arrivals a h2 {
     font-size: 20px;
     padding-top: 15px;
     margin-bottom: -8px;
     color: white;
   }
-  .arrivals .cards{
+  .arrivals .text-left {
+    font-size: 20px;
+    padding-top: 15px;
+    margin-bottom: -8px;
+    color: white;
+  }
+  .arrivals .cards {
     display: grid;
     width: 100%;
-   grid-template-columns: auto auto;
-   padding: 5px;
+    grid-template-columns: auto auto;
+    padding: 5px;
     gap: 10px;
   }
-  .arrivals .cards a .card{
+  .arrivals .cards a .card {
     width: 150px;
-    padding: 5px ;
+    padding: 5px;
     margin-bottom: 10px;
-    
   }
   .arrivals .cards .card .image {
     height: 125px;
   }
-  .arrivals .cards .card .image img{
-   height: 100%;
+  .arrivals .cards .card .image img {
+    height: 100%;
   }
-  .arrivals .cards .card .details{
+  .arrivals .cards .card .details {
     width: 100%;
     margin-left: -0.08px;
   }
-  .arrivals .cards .card .details .other-colors{
-   
+  .arrivals .cards .card .details .other-colors {
     display: flex;
   }
-  .arrivals .cards .card .details .other-colors p{
+  .arrivals .cards .card .details .other-colors p {
     display: flex;
     height: 25px;
     font-size: 8px;
@@ -558,23 +687,161 @@ background-color: black;
     justify-content: center;
     width: 40px;
   }
-  .arrivals .cards .card .details h3{
+  .arrivals .cards .card .details h3 {
     font-size: 11px;
   }
-  .arrivals .cards .card .details .brand{
+  .arrivals .cards .card .details .brand {
     font-size: 8px;
   }
-  .arrivals .cards .card .price{
-   display: flex;
-   margin-top: -15px;
-   margin-left: -9px;
-   width: 100%;
-   flex-direction: column;
-   font-size: 11px;
+  .arrivals .cards .card .price {
+    display: flex;
+    margin-top: -15px;
+    margin-left: -9px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 11px;
   }
-  .arrivals .cards .card .price .amount{
+  .arrivals .cards .card .price .amount {
     font-size: 15px;
   }
   /* arrival ends here */
- 
+
+  /* shop by category */
+  .sbc2 {
+    width: 100%;
+    margin-bottom: -40px;
+  }
+  .sbc2 a h2 {
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 70px;
+  }
+  .sbc2 .cards {
+    width: 100%;
+    display: grid;
+
+    align-items: center;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .rmb {
+    display: none;
+  }
+  .sbc2 .cards a .card {
+    width: 145px;
+    margin: -10px;
+  }
+  .sbc2 .cards a .card h3 {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .sbc2 .cards a .card p {
+    width: 70px;
+    font-size: 12px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .sbc2 .cards a .card img {
+    width: 100%;
+    padding: 8px;
+    height: 120px;
+  }
+  /* shop by category ends here */
+
+  /* sbc banner */
+  .sbc {
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+  }
+  .sbc img {
+    border-radius: 0px;
+    height: 100%;
+  }
+  /* sbc banner end */
+
+  /* shop by department */
+  .sbd {
+    width: 100%;
+  }
+  .sbd a h2 {
+    font-size: 18px;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: 60px;
+  }
+  .sbd .cards {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+
+    grid-template-columns: auto auto;
+  }
+  .sbd .cards a .card {
+    width: 150px;
+    margin: -10px;
+    height: 200px;
+  }
+  .sbd .cards a .card h3 {
+    font-size: 13px;
+  }
+  .sbd .cards a .card .color {
+    font-size: 10px;
+  }
+  .sbd .cards a .card img {
+    height: 130px;
+  }
+  /* shop by department ends here */
+
+  /* chosen by experts */
+  .experts {
+    width: 100%;
+  }
+  .experts a h2 {
+    font-size: 18px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: -15px;
+    margin-left: 50px;
+  }
+
+  .experts .cards {
+    display: flex;
+
+    flex-direction: column;
+    width: 100%;
+  }
+  .experts .cards a .card {
+    width: 295px;
+    border: 1px solid grey;
+  }
+  .experts .cards a .card .main-img {
+    height: 260px;
+  }
+  .experts .cards a .card .sub-img {
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+  .experts .cards a .card .sub-img img {
+    width: 85px;
+    height: 75px;
+    border-radius: 3px;
+  }
+  .experts .cards a .card h3 {
+    font-size: 15px;
+    margin-top: 28px;
+  }
+  .experts .cards a .card .price {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .experts .cards a .card .price span {
+    font-size: 18px;
+  }
+  /* chosen by experts ends here*/
 }
