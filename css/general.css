@@ -488,10 +488,10 @@ body .banner a button:hover {
 }
 /* chosen by experts ends here */
 
-@media only screen and (max-width: 320px) {
+@media  screen and (min-width:320px) {
   body {
-    max-width: 200%;
-    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
