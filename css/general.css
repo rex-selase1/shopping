@@ -15,7 +15,7 @@
 
 body {
   width: 100vw;
-  background-color: rgb(237, 234, 234);
+  background-color: rgba(255, 255, 255, 1);
 }
 body .announcement {
   width: 100%;
@@ -70,7 +70,7 @@ header .nav ul {
 }
 header .icons {
   display: flex;
-  gap: 40px;
+  gap: 50px;
   font-size: 18px;
 }
 /* side panel */
@@ -89,25 +89,46 @@ body .banner {
   position: relative;
   width: 100%;
   height: 640px;
+  background-color: rgba(247, 240, 234, 1);
 }
-body .banner img {
-  height: 100%;
-  width: 100%;
+body .banner .text{
+  padding: 150px 110px;
+  text-transform: capitalize;
+}
+body .banner .text p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: -20px;
+  color: rgb(48, 46, 46);
+}
+body .banner .text h2{
+  margin: 20px 0;
+  font-size: 60px;
+  /* border: 1px solid; */
+  width: 700px;
+  font-weight: 530;
+}
+body .banner img{
+  position: absolute;
+  top: 1.5%;
+  left: 40%;
+  width: 630px;
 }
 .banner a button {
-  position: absolute;
+  /* position: absolute; */
   z-index: 22222;
-  left: 43%;
+ 
   /* border: none; */
-  background-color: rgb(39, 85, 72);
-  width: 200px;
+  background-color: rgb(6, 6, 6);
+  width: 180px;
   color: white;
-  font-size: 18px;
-  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  border-radius: 20px;
   font-weight: 700;
   transition: 0.3s ease;
-  padding: 10px 8px;
-  top: 85%;
+  padding: 15px 8px;
+ 
 }
 body .banner a button:hover {
   background-color: rgb(26, 118, 92);
@@ -119,7 +140,7 @@ body .banner a button:hover {
 .main .heading {
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-decoration: none;
   font-size: 28px;
   color: var(--heading-color);
@@ -146,9 +167,9 @@ body .banner a button:hover {
   text-transform: capitalize;
 }
 .main .discover a .card {
-  width: 420px;
+  width: 440px;
   /* border: 2px solid; */
-  height: 300px;
+  height: 320px;
 }
 .main .discover a .card:hover {
   text-decoration: underline;
@@ -158,6 +179,9 @@ body .banner a button:hover {
   width: 100%;
   height: 220px;
   border-radius: 15px;
+  box-shadow: 1px 1px 2px 5px rgba(237, 235, 235, 0.3);
+
+
 }
 .main .discover a .card .info {
   height: 30%;
@@ -231,17 +255,81 @@ body .banner a button:hover {
   margin-left: 100px;
   text-transform: capitalize;
 }
-
-.arrivals .text-left {
+.head{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+.expertise{
+  width: 78%;
+  margin-bottom: 20px;
+}
+.categorical{
+  display: flex;
+  width: 80%;
+  margin:  auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ height: 150px;
+ gap: 60px;
+}
+.categorical p{
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 550;
+  border: 2px solid;
+  padding: 8px;
+  border-radius: 25px;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categorical .dark{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 550;
+  border: 2px solid;
+  padding: 15px;
+  border-radius: 20px;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .text-left {
   color: var(--heading-color);
   text-align: left;
 
-  margin: 50px 0;
+  margin: 30px 0;
   width: 400px;
   /* border :1px solid; */
   font-size: 28px;
-  margin-left: 100px;
+  /* margin-left: 125px; */
   text-transform: capitalize;
+}
+ .head .arrows{
+  display: flex;
+  gap: 20px;
+  /* width: 100px; */
+ 
+  /* border: 1px solid; */
+}
+.head .arrows p{
+  /* border: 1px solid; */
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 10px 15px;
+  background-color: rgb(237, 238, 240);
 }
 .arrivals .cards .card .details {
   margin: 20px 10px;
@@ -250,6 +338,7 @@ body .banner a button:hover {
 }
 .arrivals .cards .card {
   transition: 0.2s ease;
+  box-shadow: 1px 1px 2px 5px rgba(227, 226, 226, 0.3);
 }
 .arrivals .cards .card:hover {
   transform: scale(1.02);
@@ -306,24 +395,19 @@ body .banner a button:hover {
 /* shop by category ends here */
 .sbc2 {
   width: 100%;
-  margin: 50px 0;
+  margin-top: 90px ;
 }
 .sbc2 a {
   text-decoration: none;
   text-transform: capitalize;
   color: black;
 }
-.sbc2 a h2 {
-  margin: 20px;
-  margin-left: 100px;
-  margin-bottom: 30px;
-  font-size: 27px;
-  color: var(--heading-color);
-}
+
 .sbc2 .cards {
   display: grid;
   justify-content: center;
-  gap: 30px;
+  gap: 28px;
+  margin-top: -70px;
   grid-template-columns: auto auto auto auto auto;
 }
 .sbc2 .cards .card {
@@ -438,10 +522,11 @@ body .banner a button:hover {
   grid-template-columns: auto auto auto;
 }
 .experts .cards .card {
-  width: 360px;
+  width: 380px;
   border-radius: 10px;
   background-color: white;
   padding: 7px 10px;
+  box-shadow: 1px 1px 2px 5px rgba(235, 234, 234, 0.3);
 }
 .experts .cards .card .main-img {
   width: 100%;
@@ -464,7 +549,7 @@ body .banner a button:hover {
 .experts .cards .card .sub-img img {
   height: 100px;
   border-radius: 5px;
-  width: 105px;
+  width: 112px;
 }
 .experts .cards .card h3 {
   color: black;
@@ -488,7 +573,7 @@ body .banner a button:hover {
 }
 /* chosen by experts ends here */
 
-@media  screen and (min-width:320px) {
+@media only screen and (max-width:320px) {
   body {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -573,23 +658,46 @@ body .banner a button:hover {
   body .banner {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 230px;
   }
-  body .banner img {
-    height: 100%;
-    width: 100%;
+  body .banner .text{
+    padding: 40px 10px;
+    text-transform: capitalize;
+  }
+  body .banner .text p{
+    font-size: 8px;
+    font-weight: 500;
+    
+    color: rgb(48, 46, 46);
+  }
+  body .banner .text h2{
+    margin: 30px 0;
+    font-size: 18px;
+    /* border: 1px solid; */
+    width: 200px;
+    font-weight: 530;
+  }
+  body .banner img{
+    position: absolute;
+    top: 12.9%;
+    left: 42%;
+    width: 200px;
+  }
+  .banner a{
+    text-decoration: none;
   }
   .banner a button {
-    position: absolute;
+    /* position: absolute; */
     top: 90%;
+    margin-top: -20px;
     z-index: 1;
     display: flex;
-    font-weight: 450;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 10px;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 150px;
+    height: 20px;
+    width: 130px;
     left: 85px;
   }
   /* banner section end here */
@@ -597,6 +705,7 @@ body .banner a button:hover {
   /* main section */
   .main {
     width: 100%;
+    margin-bottom: 20px;
   }
   .main .heading {
     text-transform: capitalize;
@@ -647,11 +756,11 @@ body .banner a button:hover {
     margin-bottom: -8px;
     color: white;
   }
-  .arrivals .text-left {
-    font-size: 20px;
+   .head .text-left {
+    font-size: 15px;
     padding-top: 15px;
-    margin-bottom: -8px;
-    color: white;
+    /* margin-bottom: -8px; */
+   
   }
   .arrivals .cards {
     display: grid;
@@ -800,13 +909,7 @@ body .banner a button:hover {
   .experts {
     width: 100%;
   }
-  .experts a h2 {
-    font-size: 18px;
-    font-size: 18px;
-    width: 100%;
-    margin-top: -15px;
-    margin-left: 50px;
-  }
+ 
 
   .experts .cards {
     display: flex;
@@ -844,4 +947,77 @@ body .banner a button:hover {
     font-size: 18px;
   }
   /* chosen by experts ends here*/
+}
+.head{
+  width: 100%;
+  /* border: 1px solid; */
+  margin-bottom: -10px;
+  margin-top: -30px;
+  display: flex;
+  padding: 0 13px;
+  justify-content: space-between;
+  align-items: center;
+}
+.expertise{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  margin-top: -30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.categorical{
+  display: flex;
+  width: 80%;
+  margin:  auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ height: 80px;
+ gap: 10px;
+}
+.categorical p{
+  font-size: 8px;
+  text-transform: capitalize;
+  font-weight: 550;
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 25px;
+  height: 25px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categorical .dark{
+  background-color: black;
+  color: white;
+  font-size: 8px;
+  text-transform: capitalize;
+  font-weight: 550;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 25px;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .arrows{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  /* width: 100px; */
+ 
+  /* border: 1px solid; */
+}
+.head .arrows p{
+  /* border: 1px solid; */
+  font-size: 8px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  background-color: rgb(237, 238, 240);
 }
