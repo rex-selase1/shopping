@@ -713,7 +713,7 @@ body .banner a button:hover {
     margin-top: -10px;
     margin-bottom: -10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--heading-color);
   }
   .main .discover {
@@ -729,18 +729,20 @@ body .banner a button:hover {
     /* border: 1px solid black; */
     height: 200px;
     padding-top: 10px;
+    margin-top: 10px;
   }
   .main .discover a .card img {
     width: 100%;
     height: 140px;
   }
   .main .discover a .card .info {
-    margin-top: -5px;
+    margin-top: -2px;
     font-size: 9px;
     line-height: 1.4;
   }
   .main .discover a .card .info h2 {
-    font-size: 16px;
+    font-size: 14px;
+    margin: 10px 0;
   }
   /* main section ends here */
 
@@ -947,77 +949,77 @@ body .banner a button:hover {
     font-size: 18px;
   }
   /* chosen by experts ends here*/
-}
-.head{
-  width: 100%;
-  /* border: 1px solid; */
-  margin-bottom: -10px;
-  margin-top: -30px;
-  display: flex;
-  padding: 0 13px;
-  justify-content: space-between;
-  align-items: center;
-}
-.expertise{
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  margin-top: -30px;
-  justify-content: space-between;
-  align-items: center;
-}
-.categorical{
-  display: flex;
-  width: 80%;
-  margin:  auto;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
- height: 80px;
- gap: 10px;
-}
-.categorical p{
-  font-size: 8px;
-  text-transform: capitalize;
-  font-weight: 550;
-  border: 2px solid;
-  padding: 5px;
-  border-radius: 25px;
-  height: 25px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.categorical .dark{
-  background-color: black;
-  color: white;
-  font-size: 8px;
-  text-transform: capitalize;
-  font-weight: 550;
-  border: 2px solid;
-  padding: 10px;
-  border-radius: 25px;
-  height: 30px;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.head .arrows{
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 18px;
-  /* width: 100px; */
- 
-  /* border: 1px solid; */
-}
-.head .arrows p{
-  /* border: 1px solid; */
-  font-size: 8px;
-  border-radius: 50%;
-  padding: 5px 10px;
-  background-color: rgb(237, 238, 240);
+  .head{
+    width: 100%;
+    /* border: 1px solid; */
+    margin-bottom: -10px;
+    margin-top: -30px;
+    display: flex;
+    padding: 0 13px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .expertise{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    margin-top: -30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .categorical{
+    display: flex;
+    width: 80%;
+    margin:  auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   height: 80px;
+   gap: 10px;
+  }
+  .categorical p{
+    font-size: 8px;
+    text-transform: capitalize;
+    font-weight: 550;
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 25px;
+    height: 25px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categorical .dark{
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    text-transform: capitalize;
+    font-weight: 550;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 25px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head .arrows{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    /* width: 100px; */
+   
+    /* border: 1px solid; */
+  }
+  .head .arrows p{
+    /* border: 1px solid; */
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background-color: rgb(237, 238, 240);
+  }
 }
